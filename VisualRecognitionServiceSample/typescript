@@ -1,0 +1,139 @@
+Jigar-Pandyas-MacBook:IBM JigarPandya$ cd /Users/JigarPandya/Documents/GitHub/gurucool/VisualRecognitionServiceSample
+Jigar-Pandyas-MacBook:VisualRecognitionServiceSample JigarPandya$ ls
+Jigar-Pandyas-MacBook:VisualRecognitionServiceSample JigarPandya$ pwd
+/Users/JigarPandya/Documents/GitHub/gurucool/VisualRecognitionServiceSample
+Jigar-Pandyas-MacBook:VisualRecognitionServiceSample JigarPandya$ vi testdefault.sh
+Jigar-Pandyas-MacBook:VisualRecognitionServiceSample JigarPandya$ chmod +x testdefault.sh 
+Jigar-Pandyas-MacBook:VisualRecognitionServiceSample JigarPandya$ ./testdefault.sh 
+{
+    "images": [
+        {
+            "classifiers": [
+                {
+                    "classifier_id": "default",
+                    "name": "default",
+                    "classes": [
+                        {
+                            "class": "circuit board",
+                            "score": 0.577,
+                            "type_hierarchy": "/electrical device/computer circuit/circuit board"
+                        },
+                        {
+                            "class": "computer circuit",
+                            "score": 0.691
+                        },
+                        {
+                            "class": "electrical device",
+                            "score": 0.694
+                        },
+                        {
+                            "class": "disk controller",
+                            "score": 0.553,
+                            "type_hierarchy": "/controller/disk controller"
+                        },
+                        {
+                            "class": "controller",
+                            "score": 0.557
+                        },
+                        {
+                            "class": "central processing unit",
+                            "score": 0.534
+                        },
+                        {
+                            "class": "PC board",
+                            "score": 0.5,
+                            "type_hierarchy": "/electrical device/computer circuit/PC board"
+                        },
+                        {
+                            "class": "electronic equipment",
+                            "score": 0.6
+                        },
+                        {
+                            "class": "memory device",
+                            "score": 0.599
+                        },
+                        {
+                            "class": "microchip",
+                            "score": 0.592
+                        },
+                        {
+                            "class": "jade green color",
+                            "score": 0.838
+                        },
+                        {
+                            "class": "emerald color",
+                            "score": 0.787
+                        }
+                    ]
+                }
+            ],
+            "source_url": "https://ibm.biz/BdzLPG",
+            "resolved_url": "https://watson-developer-cloud.github.io/doc-tutorial-downloads/visual-recognition/640px-IBM_VGA_90X8941_on_PS55.jpg"
+        }
+    ],
+    "images_processed": 1,
+    "custom_classes": 0
+}
+Jigar-Pandyas-MacBook:VisualRecognitionServiceSample JigarPandya$ cat ./testdefault.sh 
+#curl -u "apikey:{apikey}" "{url}/v3/classify?url=https://ibm.biz/BdzLPG&version=2018-03-19"
+curl -u "apikey:rZXy5a4_ImHy4uH6Ra7zooL4pRN27G_NMg4mSuw8tjL8" "https://api.us-south.visual-recognition.watson.cloud.ibm.com/instances/65aa8508-5efb-4457-9415-6f717d211dac/v3/classify?url=https://ibm.biz/BdzLPG&version=2018-03-19"
+Jigar-Pandyas-MacBook:VisualRecognitionServiceSample JigarPandya$ wget https://ibm.biz/BdzLPG&version=2018-03-19
+[1] 11658
+Jigar-Pandyas-MacBook:VisualRecognitionServiceSample JigarPandya$ ls
+testdefault.sh
+Jigar-Pandyas-MacBook:VisualRecognitionServiceSample JigarPandya$ 
+Redirecting output to ‘wget-log’.
+
+Jigar-Pandyas-MacBook:VisualRecognitionServiceSample JigarPandya$ wget https://watson-developer-cloud.github.io/doc-tutorial-downloads/visual-recognition/640px-IBM_VGA_90X8941_on_PS55.jpg
+--2020-10-10 00:10:31--  https://watson-developer-cloud.github.io/doc-tutorial-downloads/visual-recognition/640px-IBM_VGA_90X8941_on_PS55.jpg
+Resolving watson-developer-cloud.github.io (watson-developer-cloud.github.io)... 185.199.108.153, 185.199.109.153, 185.199.110.153, ...
+Connecting to watson-developer-cloud.github.io (watson-developer-cloud.github.io)|185.199.108.153|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 88571 (86K) [image/jpeg]
+Saving to: ‘640px-IBM_VGA_90X8941_on_PS55.jpg’
+
+640px-IBM_VGA_90X8941_on_PS55.jpg          100%[========================================================================================>]  86.50K  --.-KB/s    in 0.006s  
+
+2020-10-10 00:10:33 (14.0 MB/s) - ‘640px-IBM_VGA_90X8941_on_PS55.jpg’ saved [88571/88571]
+
+[1]+  Done                    wget https://ibm.biz/BdzLPG
+Jigar-Pandyas-MacBook:VisualRecognitionServiceSample JigarPandya$ ls
+640px-IBM_VGA_90X8941_on_PS55.jpg	BdzLPG					testdefault.sh				wget-log
+Jigar-Pandyas-MacBook:VisualRecognitionServiceSample JigarPandya$ tree
+.
+├── 640px-IBM_VGA_90X8941_on_PS55.jpg
+├── BdzLPG
+├── testdefault.sh
+└── wget-log
+
+0 directories, 4 files
+Jigar-Pandyas-MacBook:VisualRecognitionServiceSample JigarPandya$ vi testfoodmodel.sh
+Jigar-Pandyas-MacBook:VisualRecognitionServiceSample JigarPandya$ cat testfoodmodel.sh 
+#curl -u "apikey:{apikey}" -F "classifier_ids=food" "{url}/v3/classify?url=https://ibm.biz/Bd2NPs&version=2018-03-19"
+curl -u "apikey:rZXy5a4_ImHy4uH6Ra7zooL4pRN27G_NMg4mSuw8tjL8" -F "classifier_ids=food" "https://api.us-south.visual-recognition.watson.cloud.ibm.com/instances/65aa8508-5efb-4457-9415-6f717d211dac/v3/classify?url=https://ibm.biz/BdzLPG&version=2018-03-19"
+Jigar-Pandyas-MacBook:VisualRecognitionServiceSample JigarPandya$ chmod +x testfoodmodel.sh 
+Jigar-Pandyas-MacBook:VisualRecognitionServiceSample JigarPandya$ ./testfoodmodel.sh 
+{
+    "images": [
+        {
+            "classifiers": [
+                {
+                    "classifier_id": "food",
+                    "name": "food",
+                    "classes": [
+                        {
+                            "class": "non-food",
+                            "score": 1
+                        }
+                    ]
+                }
+            ],
+            "source_url": "https://ibm.biz/BdzLPG",
+            "resolved_url": "https://watson-developer-cloud.github.io/doc-tutorial-downloads/visual-recognition/640px-IBM_VGA_90X8941_on_PS55.jpg"
+        }
+    ],
+    "images_processed": 1,
+    "custom_classes": 0
+}
+Jigar-Pandyas-MacBook:VisualRecognitionServiceSample JigarPandya$
+

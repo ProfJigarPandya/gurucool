@@ -1,0 +1,16 @@
+--2020-10-10 00:09:21--  https://ibm.biz/BdzLPG
+Resolving ibm.biz (ibm.biz)... 129.33.26.222
+Connecting to ibm.biz (ibm.biz)|129.33.26.222|:443... connected.
+HTTP request sent, awaiting response... 301 OK
+Location: https://watson-developer-cloud.github.io/doc-tutorial-downloads/visual-recognition/640px-IBM_VGA_90X8941_on_PS55.jpg [following]
+--2020-10-10 00:09:28--  https://watson-developer-cloud.github.io/doc-tutorial-downloads/visual-recognition/640px-IBM_VGA_90X8941_on_PS55.jpg
+Resolving watson-developer-cloud.github.io (watson-developer-cloud.github.io)... 185.199.108.153, 185.199.109.153, 185.199.110.153, ...
+Connecting to watson-developer-cloud.github.io (watson-developer-cloud.github.io)|185.199.108.153|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 88571 (86K) [image/jpeg]
+Saving to: ‘BdzLPG’
+
+BdzLPG                                       0%[                                                                                         ]       0  --.-KB/s               BdzLPG                                     100%[========================================================================================>]  86.50K  --.-KB/s    in 0.005s  
+
+2020-10-10 00:09:30 (17.3 MB/s) - ‘BdzLPG’ saved [88571/88571]
+
