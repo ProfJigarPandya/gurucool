@@ -1,0 +1,14 @@
+Find meaning in visual content! Analyze images for scenes, objects, and other content. Choose a default model off the shelf, or create your own custom classifier. Develop smart applications that analyze the visual content of images or video frames to understand what is happening in a scene.
+
+Offering
+Visual Recognition
+Created
+10/9/2020
+Created by
+SI2020GC00554@smartinternz.com
+Resource group
+Default
+Location
+Dallas
+Status
+Active
