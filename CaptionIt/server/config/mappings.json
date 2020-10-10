@@ -1,0 +1,304 @@
+{
+  "version": 1,
+  "watson_text_to_speech_apikey": {
+    "searchPatterns": [
+      "user-provided::apikey",
+      "cloudfoundry:$['textToSpeech'][0].credentials.apikey",
+      "env:service_watson_text_to_speech:$.apikey",
+      "env:watson_text_to_speech_apikey",
+      "file:/server/localdev-config.json:$.watson_text_to_speech_apikey"
+    ]
+  },
+  "watson_text_to_speech": {
+    "credentials": {
+      "searchPatterns": [
+        "user-provided::url",
+        "cloudfoundry:watson_text_to_speech",
+        "env:watson_text_to_speech_credentials",
+        "file:/server/localdev-config.json:watson_text_to_speech_credentials"
+      ]
+    }
+  },
+  "watson_text_to_speech_iam_apikey_description": {
+    "searchPatterns": [
+      "user-provided::iam_apikey_description",
+      "cloudfoundry:$['textToSpeech'][0].credentials.iam_apikey_description",
+      "env:service_watson_text_to_speech:$.iam_apikey_description",
+      "env:watson_text_to_speech_iam_apikey_description",
+      "file:/server/localdev-config.json:$.watson_text_to_speech_iam_apikey_description"
+    ]
+  },
+  "watson_text_to_speech_iam_apikey_name": {
+    "searchPatterns": [
+      "user-provided::iam_apikey_name",
+      "cloudfoundry:$['textToSpeech'][0].credentials.iam_apikey_name",
+      "env:service_watson_text_to_speech:$.iam_apikey_name",
+      "env:watson_text_to_speech_iam_apikey_name",
+      "file:/server/localdev-config.json:$.watson_text_to_speech_iam_apikey_name"
+    ]
+  },
+  "watson_text_to_speech_iam_role_crn": {
+    "searchPatterns": [
+      "user-provided::iam_role_crn",
+      "cloudfoundry:$['textToSpeech'][0].credentials.iam_role_crn",
+      "env:service_watson_text_to_speech:$.iam_role_crn",
+      "env:watson_text_to_speech_iam_role_crn",
+      "file:/server/localdev-config.json:$.watson_text_to_speech_iam_role_crn"
+    ]
+  },
+  "watson_text_to_speech_iam_serviceid_crn": {
+    "searchPatterns": [
+      "user-provided::iam_serviceid_crn",
+      "cloudfoundry:$['textToSpeech'][0].credentials.iam_serviceid_crn",
+      "env:service_watson_text_to_speech:$.iam_serviceid_crn",
+      "env:watson_text_to_speech_iam_serviceid_crn",
+      "file:/server/localdev-config.json:$.watson_text_to_speech_iam_serviceid_crn"
+    ]
+  },
+  "watson_text_to_speech_url": {
+    "searchPatterns": [
+      "user-provided::url",
+      "cloudfoundry:$['textToSpeech'][0].credentials.url",
+      "env:service_watson_text_to_speech:$.url",
+      "env:watson_text_to_speech_url",
+      "file:/server/localdev-config.json:$.watson_text_to_speech_url"
+    ]
+  },
+  "cloud_object_storage_apikey": {
+    "searchPatterns": [
+      "user-provided::apikey",
+      "cloudfoundry:$['cloud-object-storage'][0].credentials.apikey",
+      "env:service_cloud_object_storage:$.apikey",
+      "env:cloud_object_storage_apikey",
+      "file:/server/localdev-config.json:$.cloud_object_storage_apikey"
+    ]
+  },
+  "cloud_object_storage": {
+    "credentials": {
+      "searchPatterns": [
+        "user-provided::resource_instance_id",
+        "cloudfoundry:cloud_object_storage",
+        "env:cloud_object_storage_credentials",
+        "file:/server/localdev-config.json:cloud_object_storage_credentials"
+      ]
+    }
+  },
+  "cloud_object_storage_endpoints": {
+    "searchPatterns": [
+      "user-provided::endpoints",
+      "cloudfoundry:$['cloud-object-storage'][0].credentials.endpoints",
+      "env:service_cloud_object_storage:$.endpoints",
+      "env:cloud_object_storage_endpoints",
+      "file:/server/localdev-config.json:$.cloud_object_storage_endpoints"
+    ]
+  },
+  "cloud_object_storage_iam_apikey_description": {
+    "searchPatterns": [
+      "user-provided::iam_apikey_description",
+      "cloudfoundry:$['cloud-object-storage'][0].credentials.iam_apikey_description",
+      "env:service_cloud_object_storage:$.iam_apikey_description",
+      "env:cloud_object_storage_iam_apikey_description",
+      "file:/server/localdev-config.json:$.cloud_object_storage_iam_apikey_description"
+    ]
+  },
+  "cloud_object_storage_iam_apikey_name": {
+    "searchPatterns": [
+      "user-provided::iam_apikey_name",
+      "cloudfoundry:$['cloud-object-storage'][0].credentials.iam_apikey_name",
+      "env:service_cloud_object_storage:$.iam_apikey_name",
+      "env:cloud_object_storage_iam_apikey_name",
+      "file:/server/localdev-config.json:$.cloud_object_storage_iam_apikey_name"
+    ]
+  },
+  "cloud_object_storage_iam_role_crn": {
+    "searchPatterns": [
+      "user-provided::iam_role_crn",
+      "cloudfoundry:$['cloud-object-storage'][0].credentials.iam_role_crn",
+      "env:service_cloud_object_storage:$.iam_role_crn",
+      "env:cloud_object_storage_iam_role_crn",
+      "file:/server/localdev-config.json:$.cloud_object_storage_iam_role_crn"
+    ]
+  },
+  "cloud_object_storage_iam_serviceid_crn": {
+    "searchPatterns": [
+      "user-provided::iam_serviceid_crn",
+      "cloudfoundry:$['cloud-object-storage'][0].credentials.iam_serviceid_crn",
+      "env:service_cloud_object_storage:$.iam_serviceid_crn",
+      "env:cloud_object_storage_iam_serviceid_crn",
+      "file:/server/localdev-config.json:$.cloud_object_storage_iam_serviceid_crn"
+    ]
+  },
+  "cloud_object_storage_resource_instance_id": {
+    "searchPatterns": [
+      "user-provided::resource_instance_id",
+      "cloudfoundry:$['cloud-object-storage'][0].credentials.resource_instance_id",
+      "env:service_cloud_object_storage:$.resource_instance_id",
+      "env:cloud_object_storage_resource_instance_id",
+      "file:/server/localdev-config.json:$.cloud_object_storage_resource_instance_id"
+    ]
+  },
+  "watson_visual_recognition_apikey": {
+    "searchPatterns": [
+      "user-provided::apikey",
+      "cloudfoundry:$['visualRecognition'][0].credentials.apikey",
+      "env:service_watson_visual_recognition:$.apikey",
+      "env:watson_visual_recognition_apikey",
+      "file:/server/localdev-config.json:$.watson_visual_recognition_apikey"
+    ]
+  },
+  "watson_visual_recognition": {
+    "credentials": {
+      "searchPatterns": [
+        "user-provided::url",
+        "cloudfoundry:watson_visual_recognition",
+        "env:watson_visual_recognition_credentials",
+        "file:/server/localdev-config.json:watson_visual_recognition_credentials"
+      ]
+    }
+  },
+  "watson_visual_recognition_iam_apikey_description": {
+    "searchPatterns": [
+      "user-provided::iam_apikey_description",
+      "cloudfoundry:$['visualRecognition'][0].credentials.iam_apikey_description",
+      "env:service_watson_visual_recognition:$.iam_apikey_description",
+      "env:watson_visual_recognition_iam_apikey_description",
+      "file:/server/localdev-config.json:$.watson_visual_recognition_iam_apikey_description"
+    ]
+  },
+  "watson_visual_recognition_iam_apikey_name": {
+    "searchPatterns": [
+      "user-provided::iam_apikey_name",
+      "cloudfoundry:$['visualRecognition'][0].credentials.iam_apikey_name",
+      "env:service_watson_visual_recognition:$.iam_apikey_name",
+      "env:watson_visual_recognition_iam_apikey_name",
+      "file:/server/localdev-config.json:$.watson_visual_recognition_iam_apikey_name"
+    ]
+  },
+  "watson_visual_recognition_iam_role_crn": {
+    "searchPatterns": [
+      "user-provided::iam_role_crn",
+      "cloudfoundry:$['visualRecognition'][0].credentials.iam_role_crn",
+      "env:service_watson_visual_recognition:$.iam_role_crn",
+      "env:watson_visual_recognition_iam_role_crn",
+      "file:/server/localdev-config.json:$.watson_visual_recognition_iam_role_crn"
+    ]
+  },
+  "watson_visual_recognition_iam_serviceid_crn": {
+    "searchPatterns": [
+      "user-provided::iam_serviceid_crn",
+      "cloudfoundry:$['visualRecognition'][0].credentials.iam_serviceid_crn",
+      "env:service_watson_visual_recognition:$.iam_serviceid_crn",
+      "env:watson_visual_recognition_iam_serviceid_crn",
+      "file:/server/localdev-config.json:$.watson_visual_recognition_iam_serviceid_crn"
+    ]
+  },
+  "watson_visual_recognition_url": {
+    "searchPatterns": [
+      "user-provided::url",
+      "cloudfoundry:$['visualRecognition'][0].credentials.url",
+      "env:service_watson_visual_recognition:$.url",
+      "env:watson_visual_recognition_url",
+      "file:/server/localdev-config.json:$.watson_visual_recognition_url"
+    ]
+  },
+  "cloudant_apikey": {
+    "searchPatterns": [
+      "user-provided::apikey",
+      "cloudfoundry:$['cloudantNoSQLDB'][0].credentials.apikey",
+      "env:service_cloudant:$.apikey",
+      "env:cloudant_apikey",
+      "file:/server/localdev-config.json:$.cloudant_apikey"
+    ]
+  },
+  "cloudant": {
+    "credentials": {
+      "searchPatterns": [
+        "user-provided::username",
+        "cloudfoundry:cloudant",
+        "env:cloudant_credentials",
+        "file:/server/localdev-config.json:cloudant_credentials"
+      ]
+    }
+  },
+  "cloudant_host": {
+    "searchPatterns": [
+      "user-provided::host",
+      "cloudfoundry:$['cloudantNoSQLDB'][0].credentials.host",
+      "env:service_cloudant:$.host",
+      "env:cloudant_host",
+      "file:/server/localdev-config.json:$.cloudant_host"
+    ]
+  },
+  "cloudant_iam_apikey_description": {
+    "searchPatterns": [
+      "user-provided::iam_apikey_description",
+      "cloudfoundry:$['cloudantNoSQLDB'][0].credentials.iam_apikey_description",
+      "env:service_cloudant:$.iam_apikey_description",
+      "env:cloudant_iam_apikey_description",
+      "file:/server/localdev-config.json:$.cloudant_iam_apikey_description"
+    ]
+  },
+  "cloudant_iam_apikey_name": {
+    "searchPatterns": [
+      "user-provided::iam_apikey_name",
+      "cloudfoundry:$['cloudantNoSQLDB'][0].credentials.iam_apikey_name",
+      "env:service_cloudant:$.iam_apikey_name",
+      "env:cloudant_iam_apikey_name",
+      "file:/server/localdev-config.json:$.cloudant_iam_apikey_name"
+    ]
+  },
+  "cloudant_iam_role_crn": {
+    "searchPatterns": [
+      "user-provided::iam_role_crn",
+      "cloudfoundry:$['cloudantNoSQLDB'][0].credentials.iam_role_crn",
+      "env:service_cloudant:$.iam_role_crn",
+      "env:cloudant_iam_role_crn",
+      "file:/server/localdev-config.json:$.cloudant_iam_role_crn"
+    ]
+  },
+  "cloudant_iam_serviceid_crn": {
+    "searchPatterns": [
+      "user-provided::iam_serviceid_crn",
+      "cloudfoundry:$['cloudantNoSQLDB'][0].credentials.iam_serviceid_crn",
+      "env:service_cloudant:$.iam_serviceid_crn",
+      "env:cloudant_iam_serviceid_crn",
+      "file:/server/localdev-config.json:$.cloudant_iam_serviceid_crn"
+    ]
+  },
+  "cloudant_password": {
+    "searchPatterns": [
+      "user-provided::password",
+      "cloudfoundry:$['cloudantNoSQLDB'][0].credentials.password",
+      "env:service_cloudant:$.password",
+      "env:cloudant_password",
+      "file:/server/localdev-config.json:$.cloudant_password"
+    ]
+  },
+  "cloudant_port": {
+    "searchPatterns": [
+      "user-provided::port",
+      "cloudfoundry:$['cloudantNoSQLDB'][0].credentials.port",
+      "env:service_cloudant:$.port",
+      "env:cloudant_port",
+      "file:/server/localdev-config.json:$.cloudant_port"
+    ]
+  },
+  "cloudant_url": {
+    "searchPatterns": [
+      "user-provided::url",
+      "cloudfoundry:$['cloudantNoSQLDB'][0].credentials.url",
+      "env:service_cloudant:$.url",
+      "env:cloudant_url",
+      "file:/server/localdev-config.json:$.cloudant_url"
+    ]
+  },
+  "cloudant_username": {
+    "searchPatterns": [
+      "user-provided::username",
+      "cloudfoundry:$['cloudantNoSQLDB'][0].credentials.username",
+      "env:service_cloudant:$.username",
+      "env:cloudant_username",
+      "file:/server/localdev-config.json:$.cloudant_username"
+    ]
+  }
+}
